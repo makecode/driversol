@@ -30,13 +30,21 @@ img
   justify-content: space-between
   align-items: center
 
+  &__logo
+    +m($mobile)
+      display: none
+
   .btn
     .icon
       margin-right: 10px
 
+.btn-automatically
+  .btn.is-big
+    +m($mobile)
+      width: 100%
+
 .download-block
   text-align: center
-
   .btn
     .icon
       margin-right: 10px

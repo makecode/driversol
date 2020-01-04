@@ -4,9 +4,14 @@
 
   &__list
     display: inline-flex
+    flex-wrap: wrap
+    +m($mobile)
+      justify-content: center
 
   &__el
     margin: 0 3px
+    +m($mobile)
+      margin-bottom: 5px
 
     &.is-active,
     &:hover
