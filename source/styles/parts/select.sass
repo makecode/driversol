@@ -1,0 +1,57 @@
+select
+  flex: 1
+  padding-left: 35px
+  padding-right: 10px
+  color: $text
+  border-radius: 0 !important
+  background-color: #ffffff
+  background-image: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
+  outline: 0
+  box-shadow: none
+  cursor: pointer
+
+/* Remove IE arrow */
+select::-ms-expand
+  display: none
+
+/* Custom Select */
+.select
+  position: relative
+  display: flex
+  width: 220px
+  height: 38px
+  line-height: 38px
+  border: 1px solid $color-border
+  box-sizing: border-box
+  overflow: hidden
+
+  &::before,
+  &::after
+    position: absolute
+    content: ''
+    top: 50%
+    transform: translateY(-50%)
+
+  &:before
+    left: 10px
+    width: 16px
+    height: 16px
+    background-image: url('../media/images/icon-win.png')
+
+  &::after
+    right: 10px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 4px 4px 0 4px
+    border-color: #424242 transparent transparent transparent
+    background: #fff
+    cursor: pointer
+    pointer-events: none
+    -webkit-transition: .25s all ease
+    -o-transition: .25s all ease
+    transition: .25s all ease

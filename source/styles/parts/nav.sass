@@ -1,0 +1,22 @@
+.nav
+  display: flex
+  color: $text-grey
+
+  &__el
+    padding-right: 23px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      top: 2px
+      right: 10px
+      width: 1px
+      height: 14px
+      background-color: $text-grey
+
+    &:last-child
+      &:after
+        display: none
+
+  &__link
+    color: $text-grey

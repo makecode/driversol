@@ -1,0 +1,41 @@
+.breadcrumbs-wrap
+  padding: 12px 0
+  background-color: #f9fafd
+
+.breadcrumbs
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+
+  &__el
+    position: relative
+    padding-right: 26px
+
+    &:after
+      position: absolute
+      content: ''
+      top: 6px
+      right: 11px
+      width: 1px
+      height: 10px
+      background-color: #7d808f
+      transform: rotate(20deg)
+
+    &:last-child
+      padding-right: 0
+      a
+        color: #7d808f
+        pointer-events: none
+
+      &:after
+        display: none
+
+  &__link,
+  &__link:visited
+    color: #3083e8
+    font-size: 13px
+    letter-spacing: 0
+
+    &:hover
+      text-decoration: underline

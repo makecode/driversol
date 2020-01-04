@@ -1,0 +1,97 @@
+.devices-wrap
+  margin-bottom: 45px
+  display: flex
+  flex-direction: row
+
+  +m($tablet)
+    flex-wrap: wrap
+
+  &__el
+    width: 50%
+    margin-right: 30px
+
+    +m($tablet)
+      width: 100%
+      margin-right: 0
+      margin-bottom: 30px
+
+    &:last-child
+      margin-right: 0
+
+    h2
+      margin-bottom: 15px
+      font-size: 22px
+      font-weight: 600
+      letter-spacing: -.8px
+
+  &.full-width
+    .devices-wrap__el
+      width: 100%
+
+.devices
+  margin-bottom: 23px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  &__el
+    padding-left: 10px
+    width: 50%
+    height: 30px
+    line-height: 30px
+    background-color: #f9fafd
+
+    &:nth-child(4n),
+    &:nth-child(4n-1)
+      background-color: #ffffff
+
+    +m($mobile)
+      width: 100%
+
+      &:nth-child(odd)
+        background-color: #f9fafd
+
+      &:nth-child(even)
+        background-color: #ffffff
+
+  a
+    display: block
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+  &.column-3
+    .devices__el
+      width: 33%
+
+      &:nth-child(6n),
+      &:nth-child(6n-1),
+      &:nth-child(6n-2)
+        background-color: #ffffff!important
+
+      &:nth-child(4n),
+      &:nth-child(4n-1)
+        background-color: #f9fafd
+
+      +m($tablet)
+        width: 50%
+
+
+
+        &:nth-child(6n),
+        &:nth-child(6n-1),
+        &:nth-child(6n-2)
+          background-color: #f9fafd!important
+
+        &:nth-child(4n),
+        &:nth-child(4n-1)
+          background-color: #ffffff!important
+
+      +m($mobile)
+        width: 100%
+
+        &:nth-child(odd)
+          background-color: #f9fafd!important
+
+        &:nth-child(even)
+          background-color: #ffffff!important

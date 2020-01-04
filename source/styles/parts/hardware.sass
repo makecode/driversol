@@ -1,0 +1,39 @@
+.hardware
+  font-size: 14px
+  color: $link
+
+  &__name
+    position: relative
+    padding-left: 8px
+    padding-right: 20px
+
+    &::after
+      position: absolute
+      content: ''
+      top: 50%
+      transform: translate(-50%)
+      right: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4px 4px 0 4px
+      border-color: $link transparent transparent transparent
+      background: #fff
+      cursor: pointer
+      pointer-events: none
+      -webkit-transition: .25s all ease
+      -o-transition: .25s all ease
+      transition: .25s all ease
+
+  nobr
+    cursor: pointer
+
+.hardware-list
+  display: none
+  padding: 5px 5px 5px 10px
+  border-left: 1px solid $link
+
+  &__el
+    margin-bottom: 3px
+    font-size: 13px
+    color: $link

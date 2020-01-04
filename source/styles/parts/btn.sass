@@ -1,0 +1,33 @@
+.btn
+  display: inline-block
+  text-align: center
+  height: 46px
+  line-height: 46px
+  font-size: 15px
+  font-weight: 700
+  text-transform: uppercase
+  color: #ffffff
+  background-color: $primary
+  transition: all .3s ease-in-out
+  &:hover
+    background-color: $primary-light
+
+  &.is-green
+    background-color: $bg-green
+    &:hover
+      background-color: $bg-green-light
+
+  &.transparent
+    font-size: 14px
+    font-weight: 400
+    text-transform: none
+    background-color: transparent
+    color: #3184e8
+    &:hover
+      background-color: transparent
+
+  &.is-big
+    width: 360px
+
+  &.full-width
+    width: 100%

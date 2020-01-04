@@ -1,0 +1,65 @@
+.search
+  width: 540px
+  position: relative
+  +m($mobile)
+    width: 100%
+
+  &__form
+    display: flex
+
+  &__field
+    width: 100%
+
+  .input
+    display: block
+    padding-left: 22px
+    padding-right: 35px
+    width: 100%
+    height: 60px
+    line-height: 60px
+    font-size: 18px
+    background-color: $bg-input-header
+    color: #b9bfdf
+    cursor: text
+
+    &::placeholder
+      color: #b9bfdf
+
+  .btn
+    display: inline-block
+    width: 65px
+    height: 60px
+    line-height: 60px
+    color: #ffffff
+    background-color: $primary
+    transition: all .3s ease-in-out
+
+    &:hover
+      background-color: $primary-light
+
+  &.is-hero
+    width: 100%
+
+    .search__field
+      width: 100%
+
+    .input
+      width: 100%
+      font-size: 16px
+      height: 50px
+      line-height: 50px
+      color: #424242
+      background-color: #ffffff
+
+      &::placeholder
+        color: #424242
+
+    .btn
+      display: inline-block
+      width: 145px
+      height: 50px
+      line-height: 50px
+      color: #ffffff
+
+      .icon
+        top: -3px

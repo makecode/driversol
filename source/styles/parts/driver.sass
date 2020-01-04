@@ -1,0 +1,70 @@
+.drivers-head
+  margin-top: 20px
+  margin-bottom: 15px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  &__title
+    font-size: 22px
+    font-weight: 600
+
+.driver
+  margin-bottom: 20px
+  border: 1px solid $color-border
+
+  &__top
+    padding: 18px 20px 10px
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    +m($tablet)
+      flex-direction: column
+
+  &__left
+    width: 70%
+    +m($tablet)
+      margin-bottom: 20px
+      width: 100%
+
+  &__right
+    width: 30%
+    +m($tablet)
+      width: 100%
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    +m($mobile)
+      flex-direction: column
+
+  &__bottom
+    padding: 8px
+    background-color: #f9fafd
+
+  &__description
+    margin-bottom: 10px
+    font-size: 13px
+    font-weight: 300
+
+  dl
+    margin-bottom: 5px
+    display: flex
+    flex-direction: row
+    width: 50%
+    +m($mobile)
+      width: 100%
+
+  dt
+    margin-right: 6px
+    font-size: 14px
+    color: $text-grey
+
+  h2
+    margin-bottom: 15px
+    font-size: 22px
+    font-weight: 400

@@ -1,0 +1,68 @@
+// Language selector styles
+.language
+  position: relative
+  padding: 0 18px 0 32px
+  width: 100px
+  border: 1px solid $color-border
+  background-color: white
+  font-size: 13px
+  cursor: pointer
+  box-sizing: border-box
+  user-select: none
+
+.language::after
+  position: absolute
+  content: ''
+  right: 9px
+  top: 50%
+  transform: translateY(-50%)
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 0 4px 4px 4px
+  border-color: transparent transparent $text transparent
+
+.language__active
+  height: 38px
+  line-height: 38px
+
+.language__list
+  display: none
+  position: absolute
+  top: -1px
+  left: 0
+  width: 100%
+  transform: translateY(-100%)
+  margin: 0
+  padding: 0
+  list-style: none
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+  background-color: white
+
+.language__el
+  padding: 0 9px
+  height: 38px
+  line-height: 38px
+
+  a
+    color: $text
+
+  &:hover
+    background-color: $primary-light
+    color: #ffffff
+
+    a
+      color: #ffffff
+
+// Modificators
+.language.opened .language__list
+  display: block
+
+.language__el.selected
+  background-color: $primary-light
+
+.language .icon
+  position: absolute
+  left: 9px
+  top: 50%
+  transform: translateY(-50%)
