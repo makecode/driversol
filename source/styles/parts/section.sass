@@ -7,24 +7,40 @@
     font-weight: 300
     letter-spacing: -1px
 
+  &.is-main
+    padding: 45px 0
+
+    .devices-wrap
+      margin-bottom: 45px
+      +m($mobile)
+        margin-bottom: 0
+
+    .devices-wrap__el
+      width: 50%
+      margin-right: 30px
+
+      &:last-child
+        margin-right: 0
+
+      +m($tablet)
+        width: 100%
+        margin-right: 0
+        margin-bottom: 30px
+
+      .devices
+        margin-bottom: 23px
+
   &.is-1-inner
     padding: 25px 0
-
-    .devices-wrap,
-    .devices
-      margin-bottom: 0
 
   &.is-2-inner
     .promo
       margin-bottom: 40px
 
     .devices
-      margin-bottom: 0
+      margin-bottom: 30px
       padding-bottom: 9px
       border-bottom: 1px solid $color-border
 
   &.is-3-inner
     padding: 25px 0 50px
-
-  &.is-main
-    padding: 45px 0

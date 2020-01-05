@@ -1,5 +1,5 @@
 .devices-wrap
-  margin-bottom: 45px
+  margin-bottom: 30px
   display: flex
   flex-direction: row
 
@@ -7,16 +7,10 @@
     flex-wrap: wrap
 
   &__el
-    width: 50%
-    margin-right: 30px
+    width: 100%
 
     +m($tablet)
       width: 100%
-      margin-right: 0
-      margin-bottom: 30px
-
-    &:last-child
-      margin-right: 0
 
     h2
       margin-bottom: 15px
@@ -24,12 +18,7 @@
       font-weight: 600
       letter-spacing: -.8px
 
-  &.full-width
-    .devices-wrap__el
-      width: 100%
-
 .devices
-  margin-bottom: 23px
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -75,7 +64,6 @@
 
       +m($tablet)
         width: 50%
-
 
 
         &:nth-child(6n),
