@@ -13,35 +13,27 @@
     +m($mobile)
       margin-bottom: 5px
 
-    &.is-active,
-    &:hover
+    &.is-active
       a
         color: #fff
-        background-color: #079eeb
+        background-color: $primary
         text-decoration: none
-      i
-        &:after,
-        &:before
-          background-color: #fff
+
     &:hover
       a
-        color: #4896f6
+        color: $primary
         background-color: #ffffff
         text-decoration: none
-        border: 1px solid #4896f6
-      i
-        &:after,
-        &:before
-          background-color: #fff
+        border: 1px solid $primary
 
   &__link
     position: relative
     display: flex
     align-items: center
-    padding: 0 12px
+    padding: 0 10px
     margin: 0
     height: 28px
-    line-height: 26px
+    line-height: 28px
     font-size: 13px
     background-color: #f9fafd
     color: #7d808f
@@ -50,5 +42,6 @@
     transition: all .3s ease-in-out
     border: 1px solid transparent
 
-  i
-    transition: all .3s ease-in-out
+  &__dots
+    padding: 0 4px
+    color: #7d808f

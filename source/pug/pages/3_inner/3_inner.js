@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
   hardware.each(function (index, element) {
     $(element).click(function () {
-      $(element).next().toggle(300);
+      $(element).next().toggleClass('visible');
     });
   });
 

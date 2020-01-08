@@ -1,7 +1,5 @@
 .table
-  +m($mobile)
-    display: block
-    overflow: scroll
+  table-layout: fixed
 
   tr
     background-color: #ffffff
@@ -18,11 +16,14 @@
 
     &:first-child
       width: 80%
+      +m(768)
+        width: 100%
 
     &:last-child
       text-align: right
       width: 20%
-
+      +m(768)
+        display: none
     a
       display: block
       text-overflow: ellipsis
