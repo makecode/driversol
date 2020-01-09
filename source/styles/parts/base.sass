@@ -23,8 +23,20 @@ img
   display: inline-block
   max-width: 100%
 
+input:focus,
+select:focus,
+button:focus
+  outline: none
+
+input[type='text'],
+input[type='search'],
+input[type='button']
+  -moz-appearance: none
+  -webkit-appearance: none
+
 .copyright
   font-size: 13px
+  font-weight: 300
   color: $text-grey
 
 .top-head
