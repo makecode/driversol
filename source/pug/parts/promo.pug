@@ -1,10 +1,14 @@
-div.promo
-  div.promo__left
-    div.promo__info
-      span.promo__icon
+-
+  // const promoClass = 'promo';
+  const promoClass = 'ad';
+
+div(class=`${promoClass}`)
+  div(class=`${promoClass}__left`)
+    div(class=`${promoClass}__info`)
+      span(class=`${promoClass}__icon`)
         i.icon.icon-promo
-      div.promo__text
-        span.promo__title TweakBit Driver Updater
-        span.promo__descr  - Updates drivers automatically. Identifies & Fixes Unknown Devices.
-  div.promo__right
+      div(class=`${promoClass}__text`)
+        span(class=`${promoClass}__title`) TweakBit Driver Updater
+        span(class=`${promoClass}__descr`)  - Updates drivers automatically. Identifies & Fixes Unknown Devices.
+  div(class=`${promoClass}__right`)
     a(href='#').btn.is-green.full-width Download

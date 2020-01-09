@@ -7,17 +7,25 @@
     { title: 'Contacts', link: '#' }
   ]
 
-footer.footer
-  div.container
-    div.footer__wrap
-      div.footer__left
-        p.copyright © 2020 Driversol.com - Drivers Download Center. All rights reserved.
+  // const footClass = 'footer';
+  // const navClass = 'nav';
+  // const copyrightClass = 'copyright';
 
-      div.footer__right
-        ul.nav
+  const footClass = 'foot';
+  const navClass = 'navigation';
+  const copyrightClass = 'copy';
+
+footer(class=`${footClass}`)
+  div.container
+    div(class=`${footClass}__wrap`)
+      div(class=`${footClass}__left`)
+        p(class=`${copyrightClass}`) © 2020 Driversol.com - Drivers Download Center. All rights reserved.
+
+      div(class=`${footClass}__right`)
+        ul(class=`${navClass}`)
           each el in nav
-            li.nav__el
-              a.nav__link(href=el.link)=el.title
+            li(class=`${navClass}__el`)
+              a(class=`${navClass}__link`)(href=el.link)=el.title
         #lang-select.language
           span.language__active English
           i.icon.icon-earch
